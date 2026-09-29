@@ -21,6 +21,8 @@ while True:
         print("3 - REFRIGERANTE")
         pedido = int(input("selecione o pedido (1, 2 ou 3): "))
 
+        #verifica se o pedido é válido e solicita a quantidade
+
         if pedido in (1, 2, 3):
             quantidade = int(input("selecione a quantidade: "))
             if pedido == 1:
@@ -34,11 +36,17 @@ while True:
                 print("Refrigerante selecionado!")
         else:
             print("Opcao invalida!")
+
+#exibir a quantidade de cada item do pedido ou encerrar o pedido
+
     elif escolha == 2:
         print("=== CONSULTAR PEDIDO ===")
         print(f"Quantidade de hamburguer: {quantidade_hamburguer}")
         print(f"Quantidade de batata frita: {quantidade_batata}")
         print(f"Quantidade de refrigerante: {quantidade_refrigerante}")
+
+#finalizar o pedido e encerrar o programa
+
     elif escolha == 3:
         print("=== ENCERRAR PEDIDO ===")
         print("PEDIDO FINALIZADO COM SUCESSO")
