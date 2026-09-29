@@ -1,0 +1,2 @@
+escolha
+print ("=== FAST SNACK ===")
